@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!-- <---------------header--------------------> 
+<div id="header">
+    <div><h1>Harsh Gupta</h1>
+    <h3>Books I've Read</h3>
+    <p>Sorted with my <b>top recommendations up top</b>. Sort by <a href="">title</a>, <a href="">newest</a>, or <a href="">best</a>. </p>
+    </div>
+</div>
+<hr>
+<div id="middle">
+    <div>
+        <ul style="list-style-type: none;">
+            <% results.forEach(function(item) { %>
+                <div class="box">
+                    
+                    <img src="https://covers.openlibrary.org/b/isbn/<%=item.isbn%>-M.jpg" >
+                    <div class="info">
+                        <li><%= item.title %></li>
+                        <p><%= item.date %></p>
+                        <p><%= item.rating %></p>
+                        <p><%= item.description %></p>
+                    </div>
+                   
+                </div>
+                
+            <% }) %>
+        </ul>
+    </div>
+</div>
+    
+</body>
+</html>

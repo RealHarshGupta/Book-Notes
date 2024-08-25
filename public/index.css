@@ -1,0 +1,50 @@
+
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+#header{
+        width: 50%; /* Set a specific width for the div */
+        margin: 0 auto;
+        padding:10px;
+}
+.box {
+        display: flex;
+        align-items: flex-start; /* Align items to the top */
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        margin: 10px 0;
+    }
+    
+    .box img {
+        max-width: 150px; /* Set a maximum width for the image */
+        margin-right: 20px;
+        border: 2px solid #ddd; /* Space between image and text */
+        border-radius: 5px; /* Optional: Rounded corners for the image */
+    }
+    
+    .info {
+        flex: 1; /* Make the text container take up remaining space */
+    }
+    
+    .info h2 {
+        margin: 0 0 10px; /* Margin below the title */
+        font-size: 1.5em; /* Adjust font size for the title */
+    }
+    
+    .info p {
+        margin: 5px 0; /* Space between paragraphs */
+    }
+    
+    .info p strong {
+        font-weight: bold; /* Bold labels for clarity */
+    }
+    
+
+#middle{
+        margin: 0 40px;
+}
